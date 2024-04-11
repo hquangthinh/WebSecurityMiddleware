@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>This library provides middlewares that help to create secure ASP.NET Core web app.</Description>
+        <PackageId>WebSecurityMiddleware.AspNetCore.Core</PackageId>
+        <PackageTags>middleware aspnetcore security</PackageTags>
+        <Copyright>Copyright © 2024</Copyright>
+        <Authors>tmtm</Authors>
+        <PackageLicenseUrl>https://github.com/hquangthinh/WebSecurityMiddleware/blob/main/LICENSE</PackageLicenseUrl> 
+        <Version>1.0.0-beta1</Version>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.*</FileVersion>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>web_security_middleware.snk</AssemblyOriginatorKeyFile> 
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSecurityMiddleware", "WebSecurityMiddleware\WebSecurityMiddleware.csproj", "{5EE42FFD-C074-477E-A9B3-2D1A14805112}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{43D4100B-B72E-4AD0-91DA-81BCD7DEF3F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5CE7FB49-7825-4297-A24C-A696BBBD520D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSecurityMiddleware.UnitTests", "..\test\WebSecurityMiddleware.UnitTests\WebSecurityMiddleware.UnitTests.csproj", "{3D76974F-3511-40B9-BEC8-70ED97F46AD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{623048EC-B339-403F-B468-19E06E39304F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSecurityMiddleware.SampleWebApi", "WebSecurityMiddleware.SampleWebApi\WebSecurityMiddleware.SampleWebApi.csproj", "{FB7DE00E-0BA5-4FE8-8D05-E8A92BC41ADB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{70B97A69-7E9D-44E6-9E57-10AEF140CD93}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EE42FFD-C074-477E-A9B3-2D1A14805112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE42FFD-C074-477E-A9B3-2D1A14805112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE42FFD-C074-477E-A9B3-2D1A14805112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE42FFD-C074-477E-A9B3-2D1A14805112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D76974F-3511-40B9-BEC8-70ED97F46AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D76974F-3511-40B9-BEC8-70ED97F46AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D76974F-3511-40B9-BEC8-70ED97F46AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D76974F-3511-40B9-BEC8-70ED97F46AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7DE00E-0BA5-4FE8-8D05-E8A92BC41ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7DE00E-0BA5-4FE8-8D05-E8A92BC41ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7DE00E-0BA5-4FE8-8D05-E8A92BC41ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7DE00E-0BA5-4FE8-8D05-E8A92BC41ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5EE42FFD-C074-477E-A9B3-2D1A14805112} = {43D4100B-B72E-4AD0-91DA-81BCD7DEF3F7}
+		{3D76974F-3511-40B9-BEC8-70ED97F46AD2} = {5CE7FB49-7825-4297-A24C-A696BBBD520D}
+		{FB7DE00E-0BA5-4FE8-8D05-E8A92BC41ADB} = {623048EC-B339-403F-B468-19E06E39304F}
+	EndGlobalSection
+EndGlobal
