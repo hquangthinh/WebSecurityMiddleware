@@ -22,19 +22,13 @@ jobs:
       run: dotnet restore ./src/WebSecurityMiddleware/WebSecurityMiddleware.csproj
 
     - name: Build
-      run: dotnet build ./src/WebSecurityMiddleware/WebSecurityMiddleware.csproj --no-restore
+      run: dotnet build ./src/WebSecurityMiddleware/WebSecurityMiddleware.csproj --no-restore -c Release
 
     - name: Test
-      run: dotnet test ./test/WebSecurityMiddleware.UnitTests/WebSecurityMiddleware.UnitTests.csproj --no-build --verbosity normal
+      run: dotnet test ./test/WebSecurityMiddleware.UnitTests/WebSecurityMiddleware.UnitTests.csproj
 
     - name: Pack
       run: dotnet pack ./src/WebSecurityMiddleware/WebSecurityMiddleware.csproj --no-build --output nupkg
 
     - name: Push
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 8.0.x
-        source-url: https://api.nuget.org/v3/index.json
-      env:
-        NUGET_API_KEY: ${{secrets.NUGET_API_KEY}}
-      run: dotnet nuget push ./nupkg/*.nupkg --skip-duplicate
+      run: dotnet nuget push ./nupkg/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_API_KEY}} --skip-duplicate
