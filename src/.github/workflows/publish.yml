@@ -3,7 +3,7 @@ name: Publish to NuGet
 on:
   push:
     branches:
-      - main  # Trigger the workflow on push or pull request to the main branch
+      - main
 
 jobs:
   build:
@@ -36,5 +36,5 @@ jobs:
         dotnet-version: 8.0.x
         source-url: https://api.nuget.org/v3/index.json
       env:
-        NUGET_API_KEY: ${{secrets.NUGET_API_KEY}}  # NuGet API key, you need to set this in your GitHub repository secrets
+        NUGET_API_KEY: ${{secrets.NUGET_API_KEY}}
       run: dotnet nuget push ./nupkg/*.nupkg --skip-duplicate
