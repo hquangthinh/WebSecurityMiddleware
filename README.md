@@ -1,4 +1,10 @@
+# Repository
+
+![Build status](https://github.com/hquangthinh/WebSecurityMiddleware/actions/workflows/publish.yml/badge.svg)
+
 # Web Security Middleware for ASP.NET Core Web App
+
+[![latest version](https://img.shields.io/nuget/v/WebSecurityMiddleware.AspNetCore.Core)](https://www.nuget.org/packages/WebSecurityMiddleware.AspNetCore.Core)
 
 This is a .NET Core library that provides additional security features for web applications. It is designed to help developers secure their web applications by providing easy way to configure http response headers using configuration.
 
